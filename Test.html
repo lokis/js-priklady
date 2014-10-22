@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Testovaci stranka</title>
+  </head>
+  <body>
+    <h1>test</h1>
+    <p id="alertsa">Alerts:</p>
+    <ul id="alerts">
+    </ul>
+  </body>
+
+<script>
+
+
+var malert = function(text)
+{
+  var string = "<li>" + text + "</li>" 
+  document.getElementById("alerts").innerHTML += string;
+}
+
+window.alert = malert 
+
+malert(true)
+malert(34)
+malert('aaa')
+malert("bbb")
+
+alert('sss')
+
+</script>
+
+</html>
