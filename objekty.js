@@ -24,13 +24,14 @@ alert(a.Verze, 'verze');
 alert(a.Mezivysledek, 'Mezivysledek');
 alert(a.vratMezivysledek(), 'vratMezivysledek');
 alert(a.privatni, 'privatni');
+alert(a instanceof Test, 'a instanceof Test');
 
 
 alert('');
 alert('---- Ultimatni zapouzdreni -----');
 
 // takto zapouzdruje treba jQuerry
-var Ultimatni = function()
+var Ult = function()
 {
     this.InterniVerze  = '1.0.13';
     function vratInterniVerzi() {
@@ -43,8 +44,12 @@ var Ultimatni = function()
             return vratInterniVerzi();
         }
     };
-}();
+};
 
+var Ultimatni = Ult();
+
+
+alert(Ultimatni instanceof Ult, 'Ultimatni instanceof Ult');
 alert( Ultimatni.InterniVerze, 'InterniVerze' );
 alert( Ultimatni.vratInterniVerzi, 'vratInterniVerzi' );
 
