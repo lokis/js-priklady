@@ -1,0 +1,7 @@
+{
+  "name": "js-examples",
+  "version": "0.0.1",
+  "dependencies": {
+    "should.js": "visionmedia/should.js#~3.3.1"
+  }
+}
